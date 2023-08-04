@@ -1,12 +1,12 @@
 <!-- markdownlint-disable MD033 -->
 <!-- markdownlint-disable MD013 -->
-<h1 align="center">{{ project_full_name }}</h1>
+<h1 align="center">test mypy error</h1>
 <p align="center">
-  <a href="https://github.com/Nachtalb/{{ project_name }}/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-LGPLv3-blue.svg" alt="License: LGPL-3.0"></a>
-  <a href="https://github.com/Nachtalb/{{ project_name }}/stargazers"><img src="https://img.shields.io/github/stars/Nachtalb/{{ project_name }}?style=social" alt="GitHub Stars"></a>
-  <a href="https://github.com/Nachtalb/{{ project_name }}/network/members"><img src="https://img.shields.io/github/forks/Nachtalb/{{ project_name }}?style=social" alt="GitHub Forks"></a>
-  <a href="https://github.com/Nachtalb/{{ project_name }}/issues"><img src="https://img.shields.io/github/issues/Nachtalb/{{ project_name }}" alt="GitHub Issues"></a>
-  <a href="https://github.com/Nachtalb/{{ project_name }}/pulls"><img src="https://img.shields.io/github/issues-pr/Nachtalb/{{ project_name }}" alt="GitHub Pull Requests"></a>
+  <a href="https://github.com/Nachtalb/test_mypy_error/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-LGPLv3-blue.svg" alt="License: LGPL-3.0"></a>
+  <a href="https://github.com/Nachtalb/test_mypy_error/stargazers"><img src="https://img.shields.io/github/stars/Nachtalb/test_mypy_error?style=social" alt="GitHub Stars"></a>
+  <a href="https://github.com/Nachtalb/test_mypy_error/network/members"><img src="https://img.shields.io/github/forks/Nachtalb/test_mypy_error?style=social" alt="GitHub Forks"></a>
+  <a href="https://github.com/Nachtalb/test_mypy_error/issues"><img src="https://img.shields.io/github/issues/Nachtalb/test_mypy_error" alt="GitHub Issues"></a>
+  <a href="https://github.com/Nachtalb/test_mypy_error/pulls"><img src="https://img.shields.io/github/issues-pr/Nachtalb/test_mypy_error" alt="GitHub Pull Requests"></a>
   <br>
   <a href="https://github.com/Nachtalb"><img src="https://img.shields.io/badge/Author-Nachtalb-1f425f.svg" alt="Author: Nachtalb"></a>
 </p>
@@ -14,7 +14,7 @@
 
 ## About 🌟
 
-{{ project_description }}
+...
 
 ## Installation 🛠️
 

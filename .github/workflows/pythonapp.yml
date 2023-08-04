@@ -1,4 +1,4 @@
-name: "{{ project_name }}"
+name: "test_mypy_error"
 
 on:
   push:

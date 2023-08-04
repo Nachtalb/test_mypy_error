@@ -13,6 +13,13 @@ class State(rx.State):
     pass
 
 
+# Here we get [name-defined] cuz apparently "rx.Component" is not defined.
+# "rx.Component" is however defined in "reflex.components.component" which is
+# imported to "reflex" via:
+#
+# reflex/__init__.py : "from .components import *"
+# reflex/components/__init__.py : "from .component import Component"
+# reflex/components/component.py : "class Component(..."
 def index() -> rx.Component:
     return rx.fragment(
         rx.color_mode_button(rx.color_mode_icon(), float="right"),
@@ -26,6 +33,7 @@ def index() -> rx.Component:
                 padding="0.5em",
                 border_radius="0.5em",
                 _hover={
+                    # Same problem as with the "rx.Component"
                     "color": rx.color_mode_cond(
                         light="rgb(107,99,246)",
                         dark="rgb(179, 175, 255)",
@@ -39,7 +47,11 @@ def index() -> rx.Component:
     )
 
 
-# Add state and page to the app.
+# Here we get a [no-untyped-call] even tho rx.App is a normal class (but maybe
+# I'm missing something??) (tho I guess it's a similar or the same problem as
+# with "rx.Component")
 app = rx.App()
 app.add_page(index)
-app.compile()
+# Here we get another [no-untyped-call] but this time 100% legitimate as it does
+# not define "-> None" as enforced by mypy's 'strict=true' config.
+app.compile()  # type: ignore[no-untyped-call]

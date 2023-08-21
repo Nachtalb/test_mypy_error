@@ -230,6 +230,17 @@ files = [
 ]
 
 [[package]]
+name = "distro"
+version = "1.8.0"
+description = "Distro - an OS platform information API"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "distro-1.8.0-py3-none-any.whl", hash = "sha256:99522ca3e365cac527b44bde033f64c6945d90eb9f769703caaec52b09bbd3ff"},
+    {file = "distro-1.8.0.tar.gz", hash = "sha256:02e111d1dc6a50abb8eed6bf31c3e48ed8b0830d1ea2a1b78c61765c2513fdd8"},
+]
+
+[[package]]
 name = "executing"
 version = "1.2.0"
 description = "Get the currently executing AST node of a frame, and other information"
@@ -998,20 +1009,6 @@ files = [
 plugins = ["importlib-metadata"]
 
 [[package]]
-name = "python-dotenv"
-version = "0.13.0"
-description = "Add .env support to your django/flask apps in development and deployments"
-optional = false
-python-versions = "*"
-files = [
-    {file = "python-dotenv-0.13.0.tar.gz", hash = "sha256:3b9909bc96b0edc6b01586e1eed05e71174ef4e04c71da5786370cebea53ad74"},
-    {file = "python_dotenv-0.13.0-py2.py3-none-any.whl", hash = "sha256:25c0ff1a3e12f4bde8d592cc254ab075cfe734fc5dd989036716fd17ee7e5ec7"},
-]
-
-[package.extras]
-cli = ["click (>=5.0)"]
-
-[[package]]
 name = "python-engineio"
 version = "4.5.1"
 description = "Engine.IO server and client for Python"
@@ -1128,26 +1125,27 @@ ocsp = ["cryptography (>=36.0.1)", "pyopenssl (==20.0.1)", "requests (>=2.26.0)"
 
 [[package]]
 name = "reflex"
-version = "0.2.3"
+version = "0.2.5"
 description = "Web apps in pure Python."
 optional = false
 python-versions = ">=3.7,<4.0"
 files = [
-    {file = "reflex-0.2.3-py3-none-any.whl", hash = "sha256:562de0eadeb73d7e5b10cbbd346c71417bbeaf35bc24863f8364d7fdaa972582"},
-    {file = "reflex-0.2.3.tar.gz", hash = "sha256:c70076038f1e56abf6e0165d96f77e81c6d6eeeeb3e5dabccb2bada02a557fa2"},
+    {file = "reflex-0.2.5-py3-none-any.whl", hash = "sha256:f5e5580ddf08d5ac7ad6fda1448519e6423762a455878243b7a77bb1a4f20df5"},
+    {file = "reflex-0.2.5.tar.gz", hash = "sha256:53e2e1989eecdf3c35e45a8c4b1040af5c717a776c2318dc9e1ec43eae3b10d9"},
 ]
 
 [package.dependencies]
 alembic = ">=1.11.1,<2.0.0"
 cloudpickle = ">=2.2.1,<3.0.0"
+distro = {version = ">=1.8.0,<2.0.0", markers = "sys_platform == \"linux\""}
 fastapi = ">=0.96.0,<0.97.0"
 gunicorn = ">=20.1.0,<21.0.0"
 httpx = ">=0.24.0,<0.25.0"
 jinja2 = ">=3.1.2,<4.0.0"
+platformdirs = ">=3.10.0,<4.0.0"
 plotly = ">=5.13.0,<6.0.0"
 psutil = ">=5.9.4,<6.0.0"
 pydantic = ">=1.10.2,<2.0.0"
-python-dotenv = ">=0.13.0,<0.14.0"
 python-multipart = ">=0.0.5,<0.0.6"
 python-socketio = ">=5.7.0,<6.0.0"
 redis = ">=4.3.5,<5.0.0"
@@ -1668,4 +1666,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "6c15b34231dbe8d5cf417498cfade0932cdc8106e51e74ab37b6f4d83051a950"
+content-hash = "a50eb00af190c7ccdca251a90cd63dd9cb9e2c462144160b52c11231b1a82ca4"

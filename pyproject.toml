@@ -22,7 +22,7 @@ homepage = "https://github.com/Nachtalb/test_mypy_error"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-reflex = "^0.2.3"
+reflex = "^0.3.1"
 
 [tool.poetry.group.dev.dependencies]
 ipdb = ">=0.13.13"
